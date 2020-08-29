@@ -49,7 +49,7 @@ def main():
             print("Enter your password (default=empty) : ",end=" ")
             password = input()
             if password=="":
-                print(f"Password => [none]")
+                print("Password => [none]")
             else:
                 print(f"Password => {password}")
             cmd = "net user \""+user_selected+"\" \""+password+"\""
@@ -61,6 +61,6 @@ def main():
             sys.exit()
     else:
         print("[!] You have no admin privileges")
-        print("[!] You need admin privileges to contine")
+        print("[!] You need admin privileges to continue")
 if __name__ == '__main__':
     main()
