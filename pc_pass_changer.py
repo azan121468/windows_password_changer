@@ -3,6 +3,12 @@ import ctypes
 import os
 import sys
 
+def title():
+    print("****************************")
+    print("* Windows Password Changer *")
+    print("*       Written by         *")
+    print("*      Azan  Shahid        *")
+    print("****************************")
 def is_user_admin():
     try:
         is_admin = os.getuid() == 0
@@ -18,6 +24,7 @@ def get_users():
     else:
         print("I did not support this platform")
 def main():
+    title()
     user_num = 0
     current_user = sp.os.getlogin()  #get current user name
     print("Checking for privileges")
